@@ -3,7 +3,7 @@ const axios = require("axios");
 async function getDetails(id) {
     try {
         const response = await axios.get(
-            `https://teraboxvideodownloader.nepcoderdevs.workers.dev/?url={url}`
+            `https://teraboxvideodownloader.nepcoderdevs.workers.dev/?data={url}`
         );
         return response.data;
     } catch (error) {
