@@ -1,9 +1,9 @@
 const axios = require("axios");
 
-async function getDetails(url) {
+async function getDetails(id) {
     try {
         const response = await axios.get(
-            `https://teraboxvideodownloader.nepcoderdevs.workers.dev/?data=${url}`
+            `https://terabox-dl-arman.vercel.app/api?data=${id}`
         );
         return response.data;
     } catch (error) {
